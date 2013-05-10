@@ -15,7 +15,15 @@ class FluxApiInstaller extends LibraryInstaller
     {
         $type = $package->getType();
         if (isset($this->_locations[$type])) {
-            return $this->_locations[$type] . $package->getInstallerName();
+            $name = $package->getPrettyName();
+
+            // support installer name
+            $extra = $package->getExtra();
+            if (!empty($extra['installer-name'])) {
+                $name = $extra['installer-name'];
+            }
+
+            return $this->_locations[$type] . $name;
         } else {
             throw new \InvalidArgumentException('Unable to install package, it is not within the supported package types.');
         }
