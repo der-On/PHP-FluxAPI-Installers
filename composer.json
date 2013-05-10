@@ -1,0 +1,11 @@
+{
+  "name": "flux-api/installers",
+  "type": "composer-installer",
+  "license": "GPL",
+  "autoload": {
+    "psr-0": { "FluxAPI\\Installers": "src/" }
+  },
+  "extra": {
+    "class": "FluxAPI\\Installers\\Installer"
+  }
+}
