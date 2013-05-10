@@ -2,7 +2,9 @@
 
 namespace FluxAPI\Installers;
 
-class Installer implements Composer\Installer\InstallerInterface
+class Installer extends Composer\Installer\BaseInstaller
 {
-
+    protected $locations = array(
+        'plugin'    => 'Plugins/{$name}/',
+    );
 }
