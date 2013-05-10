@@ -1,6 +1,6 @@
 <?php
 
-namespace FluxAPI\Installers;
+namespace FluxAPI\Composer;
 
 class FluxApiInstaller extends Composer\Installer\BaseInstaller
 {

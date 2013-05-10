@@ -4,10 +4,10 @@
   "version": "0.1",
   "license": "GPL",
   "autoload": {
-    "psr-0": { "FluxAPI\\Installers": "installers/src" }
+    "psr-0": { "FluxAPI\\Composer": "src" }
   },
   "extra": {
-    "class": "FluxAPI\\Installers\\FluxApiInstaller"
+    "class": "FluxAPI\\Composer\\FluxApiInstaller"
   },
   "require": {
     "composer/installers": "~1.0"
