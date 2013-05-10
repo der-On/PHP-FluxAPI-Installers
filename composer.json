@@ -8,5 +8,8 @@
   },
   "extra": {
     "class": "FluxAPI\\Installers\\Installer"
+  },
+  "require": {
+    "composer/installers": "~1.0"
   }
 }
